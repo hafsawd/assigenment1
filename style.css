@@ -313,6 +313,7 @@ nav h1{
     padding: 50px 160px 50px 160px;
 }
 .social-media{
+    margin-top: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
