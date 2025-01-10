@@ -9,6 +9,9 @@ body{
     background: #F5F5F5;
 }
 /* common css */
+.text-center{
+    text-align: center;
+}
 .container{    
     margin: 24px 160px 24px 160px;
 }
@@ -226,4 +229,51 @@ nav h1{
     background: rgb(0, 106, 80);
     color: #fff;
     margin-top: 32px;
+}
+/* donate section design */
+.donate-card-container{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.donate-card{
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    padding: 40px;   
+}
+.donate-card-2{
+    background: rgb(198, 228, 214);
+}
+.donate-card:hover{
+    background: rgb(48, 9, 223) ;
+    color: #fff;
+    cursor: pointer;
+}
+.donate-card h1{
+    color: rgba(14, 14, 14, 0.8);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 48px;
+}
+.class-input{
+    padding: 20px 40px 20px 40px;
+    width: 800px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid rgba(14, 14, 14, 0.15);
+    background: rgb(255, 255, 255);
+}
+.class-input::placeholder{
+    color: rgba(14, 14, 14, 0.3);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    }
+.section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px ;
 }
