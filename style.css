@@ -306,3 +306,15 @@ nav h1{
     border-radius: 8px 0px 0px 8px;
     background: rgb(255, 255, 255);
 }
+/* footer section design */
+.footer-container{
+    background: #fff;
+    margin-top: 80px;
+    padding: 50px 160px 50px 160px;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+}
