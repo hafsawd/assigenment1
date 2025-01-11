@@ -1,142 +1,183 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Fira Sans", serif;
     background: #F5F5F5;
 }
+
 /* common css */
-.text-center{
+.text-center {
     text-align: center;
 }
-.container{    
-    margin: 24px 160px 24px 160px;
+
+p {
+    line-height: 28px;
 }
-.section-title{
+
+.container {
+    width: 1280px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
+}
+
+.section-title {
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
 }
-.section-para{
+
+.section-para {
     color: rgba(14, 14, 14, 0.7);
     font-size: 16px;
     margin-top: 24px;
     margin-bottom: 36px;
 }
-.btn{
+
+.section-mt {
+    margin-top: 80px;
+}
+
+.section-mb {
+    margin-bottom: 80px;
+}
+
+.btn {
     padding: 15px 30px 15px 30px;
     border: 1px solid rgb(0, 106, 80);
     border-radius: 8px;
-    color: rgb(0, 106, 80);    
+    color: rgb(0, 106, 80);
     font-size: 18px;
     font-weight: 600;
-    line-height: 22px;       
+    line-height: 22px;
+    transition: all .4s ease;
 }
-.btn:hover{
-    background: rgb(48, 9, 223) ;
+
+.btn:hover {
+    background: rgb(0, 106, 80);
     color: #fff;
     cursor: pointer;
+    box-shadow: inset 0px 0px 135px rgba(0, 0, 0, 0.32);
 }
+
 /* navbar design */
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0px 10px;
-    padding: 24px 160px 24px 160px;
+    padding: 31px 0;
     width: 1280;
 }
-.btn{
+
+.btn {
     padding: 15px 30px 15px 30px;
     border: 1px solid rgb(0, 106, 80);
     border-radius: 8px;
-    color: rgb(0, 106, 80);    
+    color: rgb(0, 106, 80);
     font-size: 18px;
     font-weight: 600;
-    line-height: 22px;       
+    line-height: 22px;
 }
-nav h1{
+
+nav h1 {
     color: rgb(14, 14, 14);
     font-size: 32px;
     font-weight: 700;
-    line-height: 38px;    
+    line-height: 38px;
 }
+
 /* header design */
-.banner{
+.banner {
     display: flex;
     align-items: center;
     gap: 24px;
-    justify-content: space-between;    
+    justify-content: space-between;
     background: rgb(198, 228, 214);
-    padding: 70px 90px;
+    padding: 80px;
     border-radius: 24px;
 }
-.banner-content p{
-    color: rgba(14, 14, 14, 0.5);    
+
+.banner-content p {
+    color: rgba(14, 14, 14, 0.5);
     font-size: 24px;
     font-weight: 500;
-    line-height: 29px;    
     margin-bottom: 16px;
 }
-.banner-content h1{
-    font-size: 36px;
+
+.banner-content h1 {
+    font-size: 54px;
     font-weight: 700;
-    line-height: 67px;
     margin-bottom: 24px;
-    width: 410px;
 }
-.banner-btn{
-    border-radius: 8px; 
+
+.banner-btn {
+    border-radius: 8px;
     background: rgb(0, 106, 80);
     color: #fff;
     font-size: 18px;
 }
-.banner-img{
-    width: 100%;
-}
+
 /* vision css design */
-.card-container{
+.card-container {
     display: flex;
     justify-content: space-between;
     gap: 24px;
 }
-.card{
+
+.card {
     border-radius: 16px;
     gap: 32px;
     padding: 32px;
 }
-.card-1{
+
+.card-1 {
     background: rgba(84, 144, 245, 0.2);
 }
-.card-2{
+
+.card-2 {
     background: rgb(198, 228, 214);
 }
-.card-3{
+
+.card-3 {
     background: rgb(247, 235, 207);
 }
-.card-title{
+
+.card-title {
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
-    margin-top: 30px;
+    margin-top: 24px;
+    margin-bottom: 12px;
 }
-.card P{
+
+.card P {
     color: rgba(14, 14, 14, 0.7);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    margin-bottom: 24px;
 }
-.btn-1{
+
+.card .btn {
+    font-size: 16px;
+}
+
+.btn-1 {
     padding: 11px 20px 11px 20px;
     border-radius: 8px;
     background: rgb(84, 144, 245);
     color: #fff;
     border: none;
 }
-.btn-2{
+
+.btn-2 {
     padding: 11px 20px 11px 20px;
     border-radius: 8px;
     background: rgb(9, 161, 92);
@@ -144,178 +185,242 @@ nav h1{
     border: none;
 }
 
-.btn-3{
+.btn-3 {
     padding: 11px 20px 11px 20px;
     border-radius: 8px;
     background: rgb(255, 194, 57);
     color: #fff;
     border: none;
 }
+
 /* quotes css design */
-.quotes{
-    background:  rgb(255, 255, 255) url(images/quote-bg.png) !important; 
+.quotes {
+    background: rgb(255, 255, 255) url(images/quote-bg.png) !important;
     background-repeat: no-repeat !important;
-    background-position: 14px 8px !important;
+    background-position: 24px 25px !important;
     border: 1px solid rgba(14, 14, 14, 0.15);
     border-radius: 16px;
 }
-.quotes-content{
-    padding: 40px 14px ;
+
+.quotes-content {
+    padding: 48px 24px;
 }
-.quotes-text-1{
+
+.quotes-text-1 {
     color: rgba(14, 14, 14, 0.8);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 12px;
 }
-.quotes-content h4{
+
+.quotes-content h4 {
     color: rgba(14, 14, 14, 0.8);
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
     margin-bottom: 4px;
 }
-.quotes-text-2{
+
+.quotes-text-2 {
     color: rgba(14, 14, 14, 0.6);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
 }
-/* recent news section design */
-.news-container{
+
+/* Recent news section design */
+.news-container {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
-.news{
-    display: flex;    
+
+.news {
+    display: flex;
+    align-items: center;
     gap: 32px;
     border-radius: 24px;
     background: rgb(255, 255, 255);
     padding: 48px;
 }
-.news img{
+
+.news img {
     border-radius: 24px;
 }
-.news-title{
+
+.news-title {
     color: rgba(14, 14, 14, 0.8);
     font-size: 28px;
     font-weight: 700;
     line-height: 38px;
 }
-.al-jazeera-img{
-    width: 134px;    
+
+.al-jazeera-img {
+    width: 134px;
 }
-.news-date{
+
+.news-date {
     color: rgba(14, 14, 14, 0.7);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     margin: 8px 0px;
 }
-.news-date span{
+
+.news-date span {
     margin-left: 10px;
 }
-.news p{
+
+.news p {
     color: rgba(14, 14, 14, 0.7);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
 }
-.news-btn{
+
+.news-btn {
     padding: 13px 26px 13px 26px;
     border-radius: 8px;
     background: rgb(0, 106, 80);
     color: #fff;
     margin-top: 32px;
 }
+
 /* donate section design */
-.donate-card-container{
+.donate-card-container {
     display: flex;
     justify-content: center;
     gap: 24px;
 }
-.donate-card{
+
+.donate-card {
     border: 1px solid rgba(14, 14, 14, 0.15);
     border-radius: 16px;
     background: rgb(255, 255, 255);
-    padding: 40px;   
+    padding: 40px;
+    transition: all .2x;
 }
-.donate-card-2{
+
+.donate-card-2 {
     background: rgb(198, 228, 214);
 }
-.donate-card:hover{
-    background: rgb(48, 9, 223) ;
+
+.donate-card:hover {
+    background: #C6E4D6;
     color: #fff;
     cursor: pointer;
 }
-.donate-card h1{
+
+.donate-card h1 {
     color: rgba(14, 14, 14, 0.8);
-    font-size: 28px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 48px;
 }
-.class-input{
+
+.class-input {
     padding: 20px 40px 20px 40px;
-    width: 800px;
+    width: 1000px;
+    font-size: 20px;
     text-align: center;
+    outline: none;
     border: none;
     border-bottom: 1px solid rgba(14, 14, 14, 0.15);
     background: rgb(255, 255, 255);
+    transition: all .4s;
 }
-.class-input::placeholder{
+
+.class-input:focus {
+    border-bottom-color: rgb(0, 106, 80);
+}
+
+.class-input::placeholder {
     color: rgba(14, 14, 14, 0.3);
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-    }
-.section-container{
+}
+
+.section-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 32px ;
+    gap: 32px;
 }
+
 /* newsletter section design */
 .newsletter {
     display: flex;
-    align-items: center;     
+    align-items: center;
+    justify-content: center;
     background: rgb(198, 228, 214);
-    padding: 70px 90px;
+    padding: 80px;
     border-radius: 24px;
 }
-.input-container{
-    display: flex;   
-    align-items: center; 
+
+.newsletter .section-title {
+    margin-bottom: 16px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
-.btn-5{
+
+.btn-5 {
     border-radius: 0px 8px 8px 0px;
     background: rgb(0, 106, 80);
-    border: none;
     color: #fff;
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
 }
-.input-container input{
+
+.input-container input {
     width: 600px;
-    border: none;
-    padding: 18px 40px 18px 40px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 17px 40px;
     border-radius: 8px 0px 0px 8px;
     background: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-right: 0;
 }
+
+.input-container input:focus {
+    outline: none;
+    border-color: rgb(0, 106, 80);
+}
+
+.input-container input::placeholder {
+    color: rgba(14, 14, 14, 0.3);
+}
+
 /* footer section design */
-.footer-container{
+.footer-container {
     background: #fff;
     margin-top: 80px;
     padding: 50px 160px 50px 160px;
 }
-.social-media{
+
+.social-media {
     margin-top: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 23px;
+}
+
+/* Responsive */
+@media screen and (max-width:1400px) {
+    .container {
+        width: 1140px;
+    }
+
+    .banner-content h1 {
+        font-size: 44px;
+    }
 }
